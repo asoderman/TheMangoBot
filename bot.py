@@ -18,7 +18,7 @@ USER_AGENT = "ThatsTheMango 0.1 by /u/ %s" % MASTER
 # Read in the credentials
 with open("config.txt", "r") as f:
 	USERNAME = f.readline().replace('\n','')
-	PASSWORD = f.readline()
+	PASSWORD = f.readline().replace('\n', '')
 	MASTER = f.readline()
 
 def main():
