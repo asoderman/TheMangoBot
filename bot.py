@@ -8,11 +8,12 @@ import os
 import datetime
 import re
 
-USER_AGENT = "ThatsTheMango 0.1 by /u/bolderthegreat"
+
 USERNAME = ''
 PASSWORD = ''
 MASTER = ''
 KEYWORDS = ['mango does', 'mango do', 'what does mango', 'mango did']
+USER_AGENT = "ThatsTheMango 0.1 by /u/ %s" % MASTER
 
 # Read in the credentials
 with open("config.txt", "r") as f:
